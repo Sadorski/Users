@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create New User</title>
+</head>
+<body>
+    <h1>Add a new user</h1>
+   <form action="/users/create" method="post">
+       <ul>
+           <li>
+               <label for="first">First</label>
+               <input type=text name="first_name">
+           </li>
+           <li>
+                <label for="last">Last</label>
+                <input type=text name="last_name">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type=text name="email">
+            </li>
+            <li>
+                <label for="age">Age</label>
+                <input type=text name="age">
+            </li>
+            <li>
+                <input type=submit name=submit value=Create>
+            </li>
+
+       </ul>
+   </form>
+
+   <p><a href="/users">Go Back</a></p>
+</body>
+</html>
